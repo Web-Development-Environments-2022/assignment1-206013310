@@ -63,6 +63,14 @@ h2  {
 	color: #262627;
 	font-family: 'Handlee', cursive;
   }
+  label{
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 25px;
+	color: #262627;
+	font-family: 'Handlee', cursive;
+  }
   .qr-code {
 	max-width: 200px;
 	margin: 10px;
@@ -203,7 +211,7 @@ scan my code
 		// Generate the link that would be
 		// used to generate the QR Code
 		// with the given data
-		let finalURL = "http://127.0.0.1:5501/index.html"
+		let finalURL = "https://web-development-environments-2022.github.io/assignment1-shaharkr/"
 
 		// Replace the src of the image with
 		// the QR code image
@@ -225,8 +233,28 @@ ans
 <br/>
 contact me
 <br/>
-<br/>
-<br/>
+<!-- <input type="email" placeholder="sophie@example.com"> -->
+<form>
+	<div class="nameBox">
+		<label for="emailAddress">Your name</label><br>
+		<input id="contactName" type="name" size="20" maxLength="30" required
+			   placeholder="Write your name here" pattern=".+@beststartupever\.com"
+			   title="Please provide only a Best Startup Ever corporate e-mail address">
+	  </div>
+	<div class="emailBox">
+	  <label for="emailAddress">Your e-mail address</label><br>
+	  <input id="emailAddress" type="email" size="40" maxLength="50" required
+			 placeholder="username@beststartupever.com" pattern=".+@beststartupever\.com"
+			 title="Please provide only a Best Startup Ever corporate e-mail address">
+	</div>
+	<br/>
+   
+	<div class="messageBox">
+	  <textarea id="message" cols="80" rows="8" required
+				placeholder="Write to me anything :)"></textarea>
+	</div>
+	 <input type="submit" value="Send Request">
+   </form>
 </section>
 
 

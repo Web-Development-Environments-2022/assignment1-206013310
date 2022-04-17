@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", initApp);
 const renderContacts = () => {
   const main = document.querySelector("main");
   const cardsArray = [];
-  const paths = ["1.jpg", "8.jpg", "2.jpg", "3.jpg", "5.jpg", "7.jpg", "10.jpg", "11.jpg"];
+  const paths = ["1.jpg", "8.jpg", "2.jpg", "3.jpg", "7.jpg", "10.jpg", "11.jpg"];
   paths.forEach((path) => {
     const elemObj = createCardElements();
     const card = createPersonCard(elemObj, path);
