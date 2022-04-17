@@ -2,14 +2,21 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Bungee+Shade&family=Dawning+of+a+New+Day&family=Fredoka:wght@500&family=Handlee&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Bungee+Shade&family=Dawning+of+a+New+Day&family=Fredoka:wght@500&family=Handlee&family=Permanent+Marker&family=Sofia&effect=shadow-multiple&display=swap" rel="stylesheet">
+<script src="js/main.js" defer></script>
+<meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Your Website Title" />
+<meta property="og:description"   content="Your description" />
+<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 <title>Lea Eva Kramer</title>
 <style>
   body {
     font-family: "Fredoka", sans-serif;
     font-size: 30px;
+    background: #ebf7f9;
+	min-height: 100vh;
+	padding: 1rem;
   }
   .section{
 	text-align: center;
@@ -48,6 +55,18 @@ h2  {
 	font-family: 'Handlee', sans-serif;
   text-indent: -470px;
   }
+  .txt{
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 15px;
+	color: #262627;
+	font-family: 'Handlee', cursive;
+  }
+  .qr-code {
+	max-width: 200px;
+	margin: 10px;
+	}
   </style>
 </head>
 <body>
@@ -70,140 +89,131 @@ h2  {
 </p>
 <br/>
 <h2>L.Kramer</h2>
-<div style="text-align: center;"><img src="night2.jpg" alt="centered image" width="400" height="267" class="'center"></div>
+<div class="'night" style="text-align: center;">
+	<img src="night.jpg" alt="centered image" width="400" height="267">
+</div>
 
 		  
 <section id="about" class="section">
-<!-- <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/> -->
 <br/>
 about me
 <br/>
-<br/>
-<br/>
+<div>
+<txt id="ab" class="txt">
+" I was born in Debrecen (Hungary) in 1926, to Sara and Mordechai David Gutman.<br/>
+When the war began we were sent to an labor camp, and luckily we all survived.<br/>
+I moved alone to Israel in 1946, after I joined to "Hashomer Hatzair".<br/>
+I met my husband Shmuel Sami Kramer here in Israel and in 1960 I married him.<br/>
+Our first son, Amos, was born in 1961, and our second son, Amir, was born in 1964.<br/>
+Throughout the years my granddaughters Oren, Shahar and Tomer were born (Amos's daughters).<br/>
+I'm working as a seamstress, but my real passion is sculpting and poetry.<br/>
+I have even published a poems book called "Autumn buds" (in hebrew "Nitzaney Stav").<br/>
+Nature is what brings me the most joy, and it is reflected in my art works and my poems. "<br/><br/>
+Lea passed away in 2015.<br/>
+<div style="text-align: center;">
+	<img src="4.jpg" alt="centered image" width="200" height="200">
+</div>
+
+ R.I.P
+ <br/>
+</txt>
+  </div>
 </section>
 
 <section id="photos" class="section">
-<!-- <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/> -->
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+	<br/>
+	my photos
+	<br/>
+	<br/>
+		<main></main>
+	<br/>
 </section>
 
 <section id="playlist" class="section">
-<!-- <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/> -->
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+	<br/>
+	my playlist
+	<br/>
+	<br/>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/12b7-srdOVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
+
 <section id="like" class="section">
-<!-- <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/> -->
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+	<br/>
+	give me a like
+	<br/>
+	  <!-- Load Facebook SDK for JavaScript -->
+	  <div id="fb-root"></div>
+	  <script async defer crossorigin="anonymous" 
+			src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+				 &version={graph-api-version}
+				 &appId={your-facebook-app-id}
+				 &autoLogAppEvents=1" 
+			nonce="FOKrbAYI">
+	  </script>
+	
+	  <!-- Your like button code -->
+	  <div class="fb-like" 
+		   data-href="https://www.your-domain.com/your-page.html" 
+		   data-width=""
+		   data-layout="standard" 
+		   data-action="like" 
+		   data-size="small"  
+		   data-share="true">
+	  </div>
 </section>
 
 <section id="qrcoder" class="section">
-<!-- <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/> -->
 <br/>
 scan my code
 <br/>
-<br/>
-<br/>
+<div class="container-fluid">
+	<div class="text-center">
+
+	<!-- Get a Placeholder image initially,
+	this will change according to the
+	data entered later -->
+	<img src=
+"https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+		class="qr-code img-thumbnail img-responsive" style="text-align: center;" />
+	</div>
+
+	
+</div>
+<script src=
+	"https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+<script>
+	// Function to HTML encode the text
+	// This creates a new hidden element,
+	// inserts the given text into it
+	// and outputs it out as HTML
+	function htmlEncode(value) {
+	return $('<div/>').text(value)
+		.html();
+	}
+
+	$(function () {
+
+	// Specify an onclick function
+	// for the generate button
+	$('#generate').click(function () {
+
+		// Generate the link that would be
+		// used to generate the QR Code
+		// with the given data
+		let finalURL = "http://127.0.0.1:5501/index.html"
+
+		// Replace the src of the image with
+		// the QR code image
+		$('.qr-code').attr('src', finalURL);
+	});
+	});
+</script>
 </section>
 
 <section id="spa" class="section">
-<!-- <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/> -->
 <br/>
 ans
 <br/>
@@ -212,21 +222,6 @@ ans
 </section>
 
 <section id="contact" class="section">
-<!-- <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/> -->
 <br/>
 contact me
 <br/>
