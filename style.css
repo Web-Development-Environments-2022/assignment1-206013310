@@ -1,6 +1,7 @@
-.text-center{
-	width: "400";
-	height: "267";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 nav {
@@ -112,7 +113,7 @@ article {
 .imgg {
     display: block;
     width: 100%;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 15px 15px;
 }
 
 
@@ -125,15 +126,52 @@ article {
 }
 
 .like-no {
-    background: url("../img/dislike.svg") no-repeat;
+    background: url("img/dislike.svg") no-repeat;
 }
 
 .like-yes {
-    background: url("../img/like.svg") no-repeat;
+    background: url("img/like.svg") no-repeat;
 }
 
 @media only screen and (min-width: 768px) {
     article:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .container{
+	  width: 100%;
+	  background: #ebf7f9;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+  }
+  form{
+	  background: #fff;
+	  display: flex;
+	  flex-direction: column;
+	  padding: 2vw 4vw;
+	  width: 90%;
+	  max-width: 600px;
+	  border-radius: 10px;
+  }
+  form input, form textarea{
+	  border: 0;
+	  margin: 10px 0;
+	  padding: 10px;
+	  outline: none;
+	  background: #f5f5f5;
+	  font-size: 14px;
+  }
+  form button{
+	  padding: 15px;
+	  background: #ada765;
+	  color: #fff;
+	  font-size: 16px;
+	  border: 0;
+	  outline: none;
+	  cursor: pointer;
+	  margin: 20px auto 0;
+	  border-radius: 30px;
+	  width: 150px;
   }

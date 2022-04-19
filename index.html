@@ -4,15 +4,21 @@
 		<link rel="stylesheet" type="text/css" href="style.css" lang="en"/>
 		<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Fredoka:wght@500&family=Handlee&display=swap" rel="stylesheet">
 		<script src="js/main.js" defer></script>
-		<!-- <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
-		<meta property="og:type"          content="website" />
-		<meta property="og:title"         content="Your Website Title" />
-		<meta property="og:description"   content="Your description" />
-		<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> -->
 		<title>Lea Eva Kramer</title>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tiny.cloud/1/z2c0sx4p35ln2ksgsxoq243jt0q82gmbfzv28if37qzerrrv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+		<script>
+		tinymce.init({
+			selector: "#mytextarea",
+			plugins: "emoticons",
+			toolbar: "emoticons",
+			toolbar_location: "bottom",
+			menubar: false
+		});
+		</script>
+
 		<style>
 			body {
 				font-family: "Fredoka", sans-serif;
@@ -22,7 +28,6 @@
 				padding: 1rem;
 			}
 			.section{
-				text-align: center;
 				margin: 40px 0 40px;
 				text-align: center;
 				text-transform: capitalize;
@@ -37,7 +42,7 @@
 				text-align: center;
 				font-size: 100px;
 				color: #ecf0f1;
-				text-shadow: 1px 1px 2px black, 0 0 25px rgb(77, 134, 241), 0 0 5px darkblue;
+				text-shadow: 1px 1px 2px black, 0 0 25px rgb(240, 232, 146), 0 0 5px rgb(139, 53, 0);
 				font-family: 'Fredoka', cursive;
 			}
 			p {
@@ -51,25 +56,23 @@
 			h2  {
 				text-align: center;
 				margin: 0.5px 0 20px;
-				text-align: center;
 				font-size: 15px;
 				color: rgb(156, 155, 155);
 				text-shadow: 0.5px 0.5px 1px #080808;
 				font-family: 'Handlee', sans-serif;
-			text-indent: -470px;
+				text-indent: -470px;
 			}
 			.txt{
 				text-align: center;
 				margin: 40px 0 40px;
-				text-align: center;
 				font-size: 15px;
 				color: #262627;
 				font-family: 'Handlee', cursive;
+				white-space: normal ;				
 			}
 			label{
 				text-align: center;
 				margin: 40px 0 40px;
-				text-align: center;
 				font-size: 25px;
 				color: #262627;
 				font-family: 'Handlee', cursive;
@@ -78,6 +81,31 @@
 				max-width: 200px;
 				margin: 10px;
 				}
+			h5 {
+				text-align: center;
+				margin: 0.5px 0 20px;
+				font-size: 25px;
+				color: rgb(156, 155, 155);
+				text-shadow: 0.5px 0.5px 1px #080808;
+				font-family: 'Handlee', sans-serif;
+			}
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 50%;
+				margin-left:25%;
+				margin-right:15%;
+			}
+
+			td, th {
+				border: 2px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
 		</style>
 	</head>
 	<body>
@@ -101,7 +129,7 @@
 		</p>
 		<br/>
 		<h2>L.Kramer</h2>
-		<div class="'night" style="text-align: center;">
+		<div style="text-align: center;">
 			<img src="night.jpg" alt="centered image" width="600" height="400">
 		</div>
 
@@ -111,23 +139,22 @@
 		about me
 		<br/>
 		<div>
-		<txt id="ab" class="txt">
-		" I was born in Debrecen (Hungary) in 1926, to Sara and Mordechai David Gutman.<br/>
-		When the war began we were sent to a labor camp, and luckily we all survived.<br/>
-		I moved alone to Israel in 1946, after I joined to "Hashomer Hatzair".<br/>
-		I met my husband Shmuel Sami Kramer here in Israel and in 1960 I married him.<br/>
-		Our first son, Amos, was born in 1961, and our second son, Amir, was born in 1964.<br/>
-		Throughout the years my granddaughters Oren, Shahar and Tomer were born (Amos's daughters).<br/>
-		I'm working as a seamstress, but my real passion is sculpting and poetry.<br/>
-		I have even published a poems book called "Autumn buds" (in hebrew "Nitzaney Stav").<br/>
-		Nature is what brings me the most joy, and it is reflected in my art works and my poems. "<br/><br/>
-		Lea passed away in 2015.<br/>
-		<div style="text-align: center;">
-			<img src="4.jpg" alt="centered image" width="200" height="200">
-		</div>
-
-		R.I.P
-		<br/>
+		<txt class="txt">
+			" I was born in Debrecen (Hungary) in 1926, to Sara and Mordechai David Gutman.<br>
+			When the war began we were sent to a labor camp, and luckily we all survived.<br>
+			I moved alone to Israel in 1946, after I joined to "Hashomer Hatzair".<br>
+			I met my husband Shmuel Sami Kramer here in Israel and in 1960 I married him.<br>
+			Our first son, Amos, was born in 1961, and our second son, Amir, was born in 1964.<br>
+			Throughout the years my granddaughters Oren, Shahar and Tomer were born (Amos's daughters).<br>
+			I'm working as a seamstress, but my real passion is sculpting and poetry.<br>
+			I have even published a poems book called "Autumn buds" (in hebrew "Nitzaney Stav").<br>
+			Nature is what brings me the most joy, and it is reflected in my art works and my poems. "<br><br>
+			Lea passed away in 2015.<br/>
+			<div style="text-align: center;">
+				<img src="4.jpg" alt="centered image" width="200" height="200">
+			</div>
+			R.I.P
+			<br/>
 		</txt>
 		</div>
 		</section>
@@ -154,104 +181,56 @@
 			<br/>
 			give me a like
 			<br/>
-			<!-- Load Facebook SDK for JavaScript -->
-			<!-- <div id="fb-root"></div>
-			<script async defer crossorigin="anonymous" 
-					src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
-						&version={graph-api-version}
-						&appId={your-facebook-app-id}
-						&autoLogAppEvents=1" 
-					nonce="FOKrbAYI">
-			</script> -->
-			
-			<!-- Your like button code -->
-			<!-- <div class="fb-like" 
-				data-href="https://www.your-domain.com/your-page.html" 
-				data-width=""
-				data-layout="standard" 
-				data-action="like" 
-				data-size="small"  
-				data-share="true">
-			</div> -->
 		</section>
 
 		<section id="qrcoder" class="section">
 			<br/>
 			scan my code
 			<br/>
-			<div class="container-fluid">
-				<div class="text-center">
-					<!-- Get a Placeholder image initially,
-					this will change according to the
-					data entered later -->
-					<img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
-						class="qr-code img-thumbnail img-responsive"
-						style="text-align: center;" />
-				</div>
+			<br/>
+			<div style="text-align: center;">
+				<img src="qr.jpg" alt="centered image" width="200" height="200">
 			</div>
-			<script src="https://code.jquery.com/jquery-3.5.1.js">
-			</script>
-
-			<script>
-				// Function to HTML encode the text
-				// This creates a new hidden element,
-				// inserts the given text into it
-				// and outputs it out as HTML
-				function htmlEncode(value) {
-				return $('<div/>').text(value)
-					.html();
-				}
-
-				$(function () {
-					// Specify an onclick function
-					// for the generate button
-					$('#generate').click(function () {
-						// Generate the link that would be
-						// used to generate the QR Code
-						// with the given data
-						let finalURL = "https://web-development-environments-2022.github.io/assignment1-shaharkr/"
-
-						// Replace the src of the image with
-						// the QR code image
-						$('.qr-code').attr('src', finalURL);
-					});
-				});
-			</script>
 		</section>
 
 		<section id="spa" class="section">
 			<br/>
 			ans
 			<br/>
-			<br/>
-			<br/>
+			<txt class="txt">
+				<h5>Q1</h5>
+				<table>
+					<tr>
+					  <th>Web 1</th>
+					  <th>Web 2</th>
+					  <th>Web 3</th>
+					</tr>
+					<tr>
+						<th>Web1 Mostly based on HTML/Portals. Sites are static, and you must physically update the page whenever you want to make changes (not dynamic- read only). The design is very simple and sparse, and it is not interactive. Advertisements on websites while surfing the internet are banned. Furthermore, in order to access a specific page, the address must be known in advance.</th>
+						<th>More dynamic (read and write). Users could add their own content and could set up websites. As a result, the level of web design has risen and become more interactive. Tag language has also been developed to communicate information between sites, which will link more in terms of meaning and semantics and less in HTML.</th>
+						<th>Also called "The semantic web", improves web technologies in demand to create, share and connect content through search and analysis based on the capability to comprehend the meaning of words, rather than on keywords or numbers. Combining AI capability with NLP. Furthermore, the three-dimensional design is being used widely in websites and services in Web 3.0.</th>
+					</tr>
+				</table>
+				<br/>
+				<h5>Q2</h5>
+			</txt>
 		</section>
 
 		<section id="contact" class="section">
 			<br/>
 			contact me
 			<br/>
-			<form>
-				<div class="nameBox">
-					<label for="emailAddress">Your name</label><br>
-					<input id="contactName" type="name" size="20" maxLength="30" required
-						placeholder="Write your name here" pattern=".+@beststartupever\.com"
-						title="Please provide only a Best Startup Ever corporate e-mail address">
-				</div>
-				<div class="emailBox">
-				<label for="emailAddress">Your e-mail address</label><br>
-				<input id="emailAddress" type="email" size="40" maxLength="50" required
-						placeholder="username@beststartupever.com" pattern=".+@beststartupever\.com"
-						title="Please provide only a Best Startup Ever corporate e-mail address">
-				</div>
-				<br/>
-			
-				<div class="messageBox">
-				<textarea id="message" cols="80" rows="8" required
-							placeholder="Write to me anything :)"></textarea>
-				</div>
-				<input type="submit" value="Send Request">
-			</form>
+			<br/>
+			<h5>Send e-mail to kramers@post.bgu.ac.il</h5>
+			<br/>
+			<div class="container">
+				<form action="mailto:kramers@post.bgu.ac.il" method="post" enctype="text/plain">
+					<input type="text" id="name" placeholder="Your Name" required>
+					<input type="email" id="email" placeholder="Your E-mail" required>
+					<textarea id="mytextarea" rows="10" placeholder="How can I help? :)"></textarea>
+					<button type="submit">Send</button>
+				</form>
+			</div>
 		</section>
 
 
